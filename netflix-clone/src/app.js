@@ -1,5 +1,6 @@
 import React from "react";
+import { Home } from "./pages";
 
 export default function App() {
-  return <div className="App">App</div>;
+  return <Home />;
 }
