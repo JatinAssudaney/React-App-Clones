@@ -1,5 +1,5 @@
-import React from "react";
-import { Redirect, Route } from "react-router-dom";
+import React from 'react';
+import { Route, Redirect } from 'react-router-dom';
 
 export function IsUserRedirect({ user, loggedInPath, children, ...rest }) {
   return (
@@ -9,9 +9,17 @@ export function IsUserRedirect({ user, loggedInPath, children, ...rest }) {
         if (!user) {
           return children;
         }
+
         if (user) {
-          return <Redirect to={{ pathname: loggedInPath }} />;
+          return (
+            <Redirect
+              to={{
+                pathname: loggedInPath,
+              }}
+            />
+          );
         }
+
         return null;
       }}
     />
@@ -26,11 +34,18 @@ export function ProtectedRoute({ user, children, ...rest }) {
         if (user) {
           return children;
         }
+
         if (!user) {
           return (
-            <Redirect to={{ pathname: "signin", state: { from: location } }} />
+            <Redirect
+              to={{
+                pathname: 'signin',
+                state: { from: location },
+              }}
+            />
           );
         }
+
         return null;
       }}
     />
