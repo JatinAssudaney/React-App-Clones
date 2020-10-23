@@ -38,9 +38,14 @@
 .header__nav {
   display: flex;
   color: white;
+  align-items: center;
   justify-content: space-evenly;
 }
 
+.header__nav a {
+  color: white;
+  text-decoration: none;
+}
 .header__option {
   display: flex;
   flex-direction: column;
