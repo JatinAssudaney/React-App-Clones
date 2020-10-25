@@ -7,6 +7,7 @@ import Header from "./Header";
 import Home from "./Home";
 import Login from "./Login";
 import { useStateValue } from "./StateProvider";
+import Payment from "./Payment";
 
 function App() {
   const [{ user }, dispatch] = useStateValue();
@@ -30,6 +31,10 @@ function App() {
           <Route path="/checkout">
             <Header />
             <Checkout />
+          </Route>
+          <Route path="/payment">
+            <Header />
+            <Payment />
           </Route>
           <Route path="/">
             <Header />
