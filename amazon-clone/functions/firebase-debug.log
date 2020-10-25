@@ -1,0 +1,38 @@
+[debug] [2020-10-25T21:37:07.717Z] ----------------------------------------------------------------------
+[debug] [2020-10-25T21:37:07.719Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jatin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2020-10-25T21:37:07.720Z] CLI Version:   8.13.0
+[debug] [2020-10-25T21:37:07.720Z] Platform:      win32
+[debug] [2020-10-25T21:37:07.720Z] Node Version:  v12.18.3
+[debug] [2020-10-25T21:37:07.721Z] Time:          Mon Oct 26 2020 03:07:07 GMT+0530 (India Standard Time)
+[debug] [2020-10-25T21:37:07.721Z] ----------------------------------------------------------------------
+[debug] [2020-10-25T21:37:07.721Z] 
+[debug] [2020-10-25T21:37:07.731Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-25T21:37:07.732Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2020-10-25T21:37:09.820Z] [hub] writing locator at C:\Users\Jatin\AppData\Local\Temp\hub-clone-71c4e.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub\u001b[22m"}}
+[info] +  functions: Using node@12 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@12 from host."}}
+[debug] [2020-10-25T21:37:11.898Z] defaultcredentials: writing to file C:\Users\Jatin\AppData\Roaming\firebase\jatin_assudaney24_gmail.com_application_default_credentials.json
+[debug] [2020-10-25T21:37:11.906Z] Setting GAC to C:\Users\Jatin\AppData\Roaming\firebase\jatin_assudaney24_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Jatin\\AppData\\Roaming\\firebase\\jatin_assudaney24_gmail.com_application_default_credentials.json"}}
+[debug] [2020-10-25T21:37:13.938Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-10-25T21:37:13.939Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-10-25T21:37:14.132Z] <<< HTTP RESPONSE 200 {"date":"Sun, 25 Oct 2020 21:37:14 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-25T21:37:14.253Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/clone-71c4e/webApps/-/config  
+ 
+[debug] [2020-10-25T21:37:15.571Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 25 Oct 2020 21:37:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4001 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4001 instead."}}
+[debug] [2020-10-25T21:37:17.713Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2020-10-25T21:37:17.713Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2020-10-25T21:37:17.713Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\Jatin\\.cache\\firebase\\emulators\\ui-v1.1.1\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\Jatin\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.1.1\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2020-10-25T21:37:17.870Z] Web / API server started at http://localhost:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at http://localhost:4001\n"}}
+[info] i  functions: Watching "F:\1. SDE PREP\5. Clones\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"F:\\1. SDE PREP\\5. Clones\\amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2020-10-25T21:37:18.251Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2020-10-25T21:37:18.252Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=1"}}
+[debug] [2020-10-25T21:37:18.252Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2020-10-25T21:37:18.253Z] [worker-~diagnostic~-f2e2f79b-82b4-4a78-836e-a8764a82de87]: Assigning socketPath: \\?\pipe\F:\1. SDE PREP\5. Clones\amazon-clone\functions\11424 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-f2e2f79b-82b4-4a78-836e-a8764a82de87]: Assigning socketPath: \\\\?\\pipe\\F:\\1. SDE PREP\\5. Clones\\amazon-clone\\functions\\11424"}}
+[debug] [2020-10-25T21:37:18.254Z] [worker-~diagnostic~-f2e2f79b-82b4-4a78-836e-a8764a82de87]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-f2e2f79b-82b4-4a78-836e-a8764a82de87]: BUSY"}}
